@@ -3,7 +3,7 @@ __pycache__
 .terraform.lock.hcl
 
 # Local .terraform directories
-.terraform/**
+.terraform
 
 #  Ignore variables files
 *.tfvars
