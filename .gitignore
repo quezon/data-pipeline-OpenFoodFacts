@@ -19,4 +19,4 @@ __pycache__
  terraform.rc
 
 gcloud_cli_hist.txt
-*.tfstate.*
+*.tfstate
