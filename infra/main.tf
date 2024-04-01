@@ -43,48 +43,17 @@ resource "google_compute_instance" "openff_vm" {
     }
   }
 }
-*/
+
 resource "google_artifact_registry_repository" "openff_ar" {
   location      = var.GCP_REGION
   repository_id = var.GCP_AR_NAME
   description   = "Docker Repository for Open Food Facts"
   format        = "DOCKER"
 }
+*/
 
 resource "google_storage_bucket" "openff_data_bucket" {
   name          = var.GCP_STORAGE_NAME
-  location      = var.GCP_LOCATION
-  force_destroy = true
-
-
-  lifecycle_rule {
-    condition {
-      age = 1
-    }
-    action {
-      type = "AbortIncompleteMultipartUpload"
-    }
-  }
-}
-
-resource "google_storage_bucket" "openff_cr_storage_block" {
-  name          = var.GCP_CR_STORAGE_BLOCK
-  location      = var.GCP_LOCATION
-  force_destroy = true
-
-
-  lifecycle_rule {
-    condition {
-      age = 1
-    }
-    action {
-      type = "AbortIncompleteMultipartUpload"
-    }
-  }
-}
-
-resource "google_storage_bucket" "openff_cr_infra_block" {
-  name          = var.GCP_CR_INFRA_BLOCK
   location      = var.GCP_LOCATION
   force_destroy = true
 

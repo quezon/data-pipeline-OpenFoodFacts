@@ -1,0 +1,5 @@
+pandas
+prefect
+prefect-gcp[cloud_storage]
+prefect-gcp[bigquery]
+pandas-gbq

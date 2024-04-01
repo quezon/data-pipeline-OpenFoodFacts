@@ -8,12 +8,13 @@ variable GCP_BQ_DATASET {}
 variable GCP_CC_NAME {}
 variable GCP_CC_TYPE {}
 variable GCP_CC_OS_IMAGE {}
-variable GCP_CR_STORAGE_BLOCK {}
-variable GCP_CR_INFRA_BLOCK {}
 variable GCP_DATAPROC_NAME {}
 variable GCP_DATAPROC_STAGING_BUCKET {}
-variable GCP_AR_NAME {}
 variable GCP_CREDENTIALS_FILE {}
 variable GCP_SERVICE_ACCOUNT {}
-variable PREFECT_API_KEY {}
-variable PREFECT_ACCOUNT_ID {}
+variable PREFECT_API_KEY {
+    sensitive = true
+}
+variable PREFECT_ACCOUNT_ID {
+    sensitive = true
+}
