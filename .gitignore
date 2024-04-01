@@ -18,5 +18,12 @@ __pycache__
  .terraformrc
  terraform.rc
 
-gcloud_cli_hist.txt
+# Terraform State Files
 *.tfstate
+
+# Data folder and CSV Files
+data/*
+*.csv
+
+# Other Files
+gcloud_cli_hist.txt
