@@ -48,7 +48,7 @@ This project was originally intended for Open Food Facts but because their data 
 
 ## Cloud Architecture
 
-![archi-2024-03-29-1157.png](:/46a8ce80565d4c10b83b172f29ba7e59)
+![alt text](https://github.com/quezon/data-pipeline-OpenFoodFacts/blob/main/images/archi-2024-03-29-1157.png)
 
 ## Reasonable Changes to Expect After The Second Submission
 
