@@ -21,6 +21,12 @@ __pycache__
 # Terraform State Files
 *.tfstate
 
+# Prefect Files and Folders
+.prefect/*
+
+# VSCode
+.vscode/*
+
 # Data folder and CSV Files
 data/*
 *.csv
