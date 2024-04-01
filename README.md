@@ -1,8 +1,8 @@
-# Food Nutritional Value 
+# Food Nutritional Value
 
 ## Objective
 
-This project aims to present the nutritional contents of foods whose data were gathered by the United States Department of Agriculture or **USDA.** 
+This project aims to present the nutritional contents of foods whose data were gathered by the United States Department of Agriculture or **USDA.**
 
 ## Why the name of the GitHub repository is not aligned with FoodData Central of USDA?
 
@@ -42,13 +42,13 @@ This project was originally intended for Open Food Facts but because their data 
 - [Google Cloud Documentation](https://cloud.google.com/docs "Google Cloud Documentation")
 - Prefect
     - [Prefect GCP](https://prefecthq.github.io/prefect-gcp/ "Prefect GCP")
-    - [Prefect Docs](https://docs.prefect.io/latest/ "Prefect Docs ") 
+    - [Prefect Docs](https://docs.prefect.io/latest/ "Prefect Docs ")
 
 &nbsp;
 
 ## Cloud Architecture
 
-&nbsp;
+![archi-2024-03-29-1157.png](:/46a8ce80565d4c10b83b172f29ba7e59)
 
 ## Reasonable Changes to Expect After The Second Submission
 
