@@ -62,4 +62,4 @@ This project was originally intended for Open Food Facts but because their data 
 
 ## Reproducibility
 
-Open [Reproducibility](https://docs.google.com/document/d/1W9M6_tQ87utLdZCVXT_oJueFO1zLi19eh5mTrXwsY-k/edit?usp=sharing "Reproducibility") document in your web browser.
+Open [Guide to Successfully Reproduce Project](https://docs.google.com/document/d/1W9M6_tQ87utLdZCVXT_oJueFO1zLi19eh5mTrXwsY-k/edit?usp=sharing "Reproducibility") document in your web browser.
