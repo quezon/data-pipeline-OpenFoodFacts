@@ -30,21 +30,22 @@ def performAllFileInserts(filenames) -> None:
 def storageToBigQuery(filename: str) -> None:
     """Perform Delete and Insert from csv file"""
     deleteQuery = f"DELETE FROM {dataset_name}.{filename} WHERE 1=1"
+    tableExistsQuery = f"SELECT COUNT(1) FROM {dataset_name}.__TABLES__ WHERE table_id='{filename}'"
 
-    try:
+    result = bigquery_query(tableExistsQuery, gcp_credentials_block)
+
+    if int(result[0][0]) == 1:
         bigquery_query(deleteQuery, gcp_credentials_block)
-    except BadRequest as e:
-        print("Table doesn't exist")
-    finally:
-        bigquery_load_cloud_storage(
-            dataset=dataset_name,
-            table=filename,
-            uri=f"gs://{bucket_name}/data/{parentFolder}/{filename}.csv",
-            gcp_credentials=gcp_credentials_block,
-            job_config={
-                "allow_quoted_newlines": True
-            }
-        )
+
+    bigquery_load_cloud_storage(
+        dataset=dataset_name,
+        table=filename,
+        uri=f"gs://{bucket_name}/data/{parentFolder}/{filename}.csv",
+        gcp_credentials=gcp_credentials_block,
+        job_config={
+            "allow_quoted_newlines": True
+        }
+    )
 
 @task()
 def getFilenames():
