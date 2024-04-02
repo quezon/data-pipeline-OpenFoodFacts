@@ -20,6 +20,8 @@ __pycache__
 
 # Terraform State Files
 *.tfstate
+*.tfstate.backup
+
 
 # Prefect Files and Folders
 .prefect/*
