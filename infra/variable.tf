@@ -44,6 +44,22 @@ variable GCP_DATAPROC_STAGING_BUCKET {
 }
 variable GCP_CREDENTIALS_FILE {}
 variable GCP_SERVICE_ACCOUNT {}
+
+variable GCP_DATAFORM_REPO {
+    description = "Name of the Dataform Repository"
+    type = string
+    default = "fooddatausda_dataf_repo"
+}
+
+variable GCP_DATAFORM_REPO_DNAME {
+    description = "Display Name of the Dataform Repository"
+    type = string
+    default = "FoodData USDA Dataform Repository"
+}
+
+variable GIT_REPO {}
+variable GIT_TOKEN {}
+
 variable PREFECT_API_KEY {
     sensitive = true
 }
