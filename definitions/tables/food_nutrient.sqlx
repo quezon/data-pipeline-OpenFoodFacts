@@ -1,7 +1,7 @@
 config {
     type: "declaration",
-    database: "datapipeline-openfoodfacts",
-    schema: "openfoodfacts_bigquerydataset",
+    database: variables.bq_database,
+    schema: variables.bq_datasource_schema,
     name: "food_nutrient",
     description: "Food Nutrient data from USDA FoodData in 2023"
 }

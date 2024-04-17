@@ -1,6 +1,6 @@
 config {
     type: "view",
-    schema: "staging",
+    schema: variables.bq_staging_schema,
     description: "List of Food Nutrional Unit Abbreviation and Complete Name"
 }
 
