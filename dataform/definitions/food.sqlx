@@ -1,7 +1,0 @@
-config {
-    type: "declaration",
-    database: "datapipeline-openfoodfacts",
-    schema: "openfoodfacts_bigquerydataset",
-    name: "food",
-    description: "Food data from USDA FoodData in 2023"
-}

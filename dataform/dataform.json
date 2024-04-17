@@ -1,8 +1,0 @@
-{
-  "defaultSchema": "openfoodfacts_bigquerydataset",
-  "assertionSchema": "dataform_assertions",
-  "warehouse": "bigquery",
-  "defaultDatabase": "datapipeline-openfoodfacts",
-  "defaultLocation": "US"
-}
-    
