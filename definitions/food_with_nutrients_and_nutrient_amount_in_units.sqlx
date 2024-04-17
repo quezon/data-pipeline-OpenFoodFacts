@@ -1,0 +1,17 @@
+config {
+    type: "view",
+    schema: "staging",
+    description: "Nutritional Value of Duplicate Food Names"
+}
+
+SELECT
+f.description as food_name, f.fdc_id, fn.nutrient_id, n.name as nutrient_name, nuacn.complete_unit_name as nutrient_unit_name, fn.amount, 
+FROM ${ref("food_nutrient")} fn
+INNER JOIN ${ref("nutrient")} n
+ON (fn.nutrient_id = n.id )
+INNER JOIN ${ref("food")} f
+ON (fn.fdc_id = f.fdc_id )
+INNER JOIN ${ref("nutrient_units_abbrev_complete_name")} nuacn
+ON (nuacn.unit_name_abbreviation = n.unit_name)
+WHERE f.description IS NOT NULL
+ORDER BY f.description asc, n.name asc, fn.amount desc

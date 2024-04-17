@@ -1,0 +1,22 @@
+config {
+    type: "view",
+    schema: "staging",
+    description: "List of Food Nutrional Unit Abbreviation and Complete Name"
+}
+
+SELECT distinct(unit_name) unit_name_abbreviation, 
+CASE
+    WHEN unit_name = 'G' THEN 'gram'
+    WHEN unit_name = 'IU' THEN 'International Units'
+    WHEN unit_name = 'MG' THEN 'milligram'
+    WHEN unit_name = 'UG' THEN 'microgram'
+    WHEN unit_name = 'kJ' THEN 'kilojoule'
+    WHEN unit_name = 'KCAL' THEN 'kilocalorie'
+    WHEN unit_name = 'SP_GR' THEN 'specific gravity'
+    WHEN unit_name = 'MCG_RE' THEN 'micrograms of retinol equivalents'
+    WHEN unit_name = 'MG_ATE' THEN 'milligrams of alpha-tocopherol equivalents'
+    WHEN unit_name = 'MG_GAE' THEN 'milligrams of gallic acid equivalents'
+    WHEN unit_name = 'UMOL_TE' THEN 'micromoles of trolox equivalents'
+    WHEN unit_name = 'PH' THEN 'pH or acidity/alkalinity scale'
+END as complete_unit_name
+FROM ${ref("nutrient")}

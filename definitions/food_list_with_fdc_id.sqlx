@@ -1,0 +1,11 @@
+config {
+    type: "view",
+    schema: "staging",
+    description: "List non unique Food names with unique FDC ID"
+}
+
+SELECT
+f.description, f.fdc_id
+FROM ${ref("food")} f
+WHERE f.description is not null
+ORDER BY f.description asc
