@@ -1,0 +1,11 @@
+config {
+    type: "view",
+    schema: variables.bq_staging_schema,
+    description: "List of unique food names"
+}
+
+SELECT
+DISTINCT(LTRIM(RTRIM(UPPER(f.description)))) food_name
+FROM ${ref("food")} f
+WHERE f.description IS NOT NULL
+ORDER BY food_name ASC

@@ -5,7 +5,7 @@ config {
 }
 
 SELECT
-f.description, f.fdc_id
+LTRIM(RTRIM(UPPER(f.description))) as food_name, f.fdc_id
 FROM ${ref("food")} f
-WHERE f.description is not null
-ORDER BY f.description asc
+WHERE f.description IS NOT NULL
+ORDER BY food_name ASC
