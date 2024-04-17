@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    schema: "staging",
+    description: "Cleaned up data corresponding to New York City",
+    // column level documentation, defined in includes/docs.js
+    // columns: docs.nyc_weather
+}
+
+SELECT
+  *
+FROM
+  ${ref("nutrient")} AS n
