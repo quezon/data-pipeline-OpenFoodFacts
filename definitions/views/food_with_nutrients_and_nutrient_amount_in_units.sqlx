@@ -1,6 +1,6 @@
 config {
     type: "view",
-    schema: "staging",
+    schema: variables.bq_staging_schema,    
     description: "Nutritional Value of Duplicate Food Names"
 }
 

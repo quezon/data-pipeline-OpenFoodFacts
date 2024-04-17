@@ -1,6 +1,6 @@
 config {
     type: "view",
-    schema: "staging",
+    schema: variables.bq_staging_schema,
     description: "List non unique Food names with unique FDC ID"
 }
 
