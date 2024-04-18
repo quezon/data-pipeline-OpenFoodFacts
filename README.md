@@ -1,5 +1,4 @@
-# Food Nutritional Value
-
+# USDA Food Nutritional Value
 ## Objective
 
 This project aims to present the nutritional contents of foods whose data were gathered by the United States Department of Agriculture or **USDA.**
@@ -50,6 +49,8 @@ This project was originally intended for Open Food Facts but because their data 
 ## Looker Dashboard
 
 ![alt text](https://github.com/quezon/data-pipeline-OpenFoodFacts/blob/main/images/looker-dashboard.png)
+
+### This [Looker Dashboard](https://lookerstudio.google.com/reporting/1b88f06b-60e3-4f00-8f9b-95bc9cf71cb7/page/yHFxD) is Open for viewing and control clicking by the Public
 
 ## Cloud Architecture
 
