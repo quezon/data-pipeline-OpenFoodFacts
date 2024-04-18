@@ -18,8 +18,10 @@ This project was originally intended for Open Food Facts but because their data 
 - Google Cloud Storage
 - Google Cloud IAM
 - Google Cloud Account
-- Prefect Cloud
+- Prefect Cloud aka "Airflow and Mage alternative"
 - Terraform Cloud
+- Dataform aka "dbt alternative"
+- Looker Studio aka "Metabase alternative"
 
 ### Development and Office Tools
 
@@ -29,6 +31,7 @@ This project was originally intended for Open Food Facts but because their data 
 - Google Docs
 - Snipping Tool
 - Joplin
+- Google Cloud Developer Architecture
 - Python
 - [PIP libraries](https://github.com/quezon/data-pipeline-OpenFoodFacts/blob/main/libraries.txt "PIP libraries")
 
@@ -44,11 +47,13 @@ This project was originally intended for Open Food Facts but because their data 
     - [Prefect GCP](https://prefecthq.github.io/prefect-gcp/ "Prefect GCP")
     - [Prefect Docs](https://docs.prefect.io/latest/ "Prefect Docs ")
 
-&nbsp;
+## Looker Dashboard
+
+![alt text](https://github.com/quezon/data-pipeline-OpenFoodFacts/blob/main/images/looker-dashboard.png)
 
 ## Cloud Architecture
 
-![alt text](https://github.com/quezon/data-pipeline-OpenFoodFacts/blob/main/images/archi-2024-03-29-1157.png)
+![alt text](https://github.com/quezon/data-pipeline-OpenFoodFacts/blob/main/images/cloud-architecture.png)
 
 ## Reasonable Changes to Expect After The Second Submission
 
@@ -59,6 +64,16 @@ This project was originally intended for Open Food Facts but because their data 
 - Updated Reproducibility document
 - Updated Cloud Architecture diagram
 - If time permits, a new GitHub repository and changed names attributed with Open Food Facts to FoodData USDA
+
+## Promises that Were Delivered for the Second Submission (5/7)
+
+- [x] Utilization of Google Looker Studio
+- [x] Utilization of Google Cloud Dataform
+- [ ] If feasible, utilization of Google Cloud Run, else utilization of Google Cloud Compute
+- [x] Updated README
+- [x] Updated Reproducibility document
+- [x] Updated Cloud Architecture diagram
+- [ ] If time permits, a new GitHub repository and changed names attributed with Open Food Facts to FoodData USDA
 
 ## Reproducibility
 
