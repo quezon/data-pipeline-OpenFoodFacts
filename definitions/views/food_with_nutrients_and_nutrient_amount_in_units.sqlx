@@ -5,7 +5,7 @@ config {
 }
 
 SELECT
-LTRIM(RTRIM(f.description)) as food_name, f.fdc_id, fn.nutrient_id, concat(n.name,' (',nuacn.complete_unit_name,')') as nutrient_name, fn.amount, 
+LTRIM(RTRIM(UPPER(f.description))) as food_name, f.fdc_id, fn.nutrient_id, concat(n.name,' (',nuacn.complete_unit_name,')') as nutrient_name, fn.amount, 
 FROM ${ref("food_nutrient")} fn
 INNER JOIN ${ref("nutrient")} n
 ON (fn.nutrient_id = n.id )
