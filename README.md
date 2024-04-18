@@ -32,7 +32,7 @@ This project was originally intended for Open Food Facts but because their data 
 - Joplin
 - Google Cloud Developer Architecture
 - Python
-- [PIP libraries](https://github.com/quezon/data-pipeline-OpenFoodFacts/blob/main/libraries.txt "PIP libraries")
+- [PIP libraries](https://github.com/quezon/data-pipeline-OpenFoodFacts/blob/main/requirements.txt "PIP libraries")
 
 ### Web Resources
 
