@@ -47,10 +47,11 @@ This project was originally intended for Open Food Facts but because their data 
     - [Prefect Docs](https://docs.prefect.io/latest/ "Prefect Docs ")
 
 ## Looker Dashboard
+Click photo below to play image how to use Looker Dashboard
+[![Watch the video](https://github.com/quezon/data-pipeline-OpenFoodFacts/blob/main/images/looker-dashboard.png)](https://drive.google.com/file/d/1M46-7XO5MU-2sj-xEg7-2UubSLWYU_lg/view?usp=sharing)
 
-![alt text](https://github.com/quezon/data-pipeline-OpenFoodFacts/blob/main/images/looker-dashboard.png)
 
-### This [Looker Dashboard](https://lookerstudio.google.com/reporting/1b88f06b-60e3-4f00-8f9b-95bc9cf71cb7/page/yHFxD) is Open for viewing and control clicking by the Public
+This [Looker Dashboard](https://lookerstudio.google.com/reporting/1b88f06b-60e3-4f00-8f9b-95bc9cf71cb7/page/yHFxD) is open for viewing and control clicking by the public.
 
 ## Cloud Architecture
 
